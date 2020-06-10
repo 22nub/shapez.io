@@ -30,42 +30,42 @@ steamPage:
     longText: >-
         [img]{STEAM_APP_IMAGE}/extras/store_page_gif.gif[/img]
 
-        shapez.io is a game about building factories to automate the creation and combination of shapes. Deliver the requested, increasingly complex shapes to progress within the game and unlock upgrades to speed up your factory.
+        Shapez.io é um jogo sobre construir fabricas para automatizar a criação e combinação de formas. Entregue o pedido, com cada vez mais formas complexas para progredir dentro do jogo e desbloquear atualizaçoes para aumentar a velocidade da sua fabrica.
 
-        Since the demand raises you will have to scale up your factory to fit the needs - Don't forget about resources though, you will have to expand in the [b]infinite map[/b]!
+        Desde que o pedido aumenta você irá ter que aumentar a sua fabrica para suprir o necessário - Não esqueça o recursos, você precissará expandir no [b]Mapa infinito[/b]!
 
-        Since shapes can get boring soon you need to mix colors and paint your shapes with it - Combine red, green and blue color resources to produce different colors and paint shapes with it to satisfy the demand.
+        Formas podem ficar entediantes rapido, Então você precisa misturar cores e pintar suas formas com as cores - Combine vermelho, verde e azul para produzir cores diferentes e pintar formas com isso para satifazer o pedido.
 
-        This game features 18 levels (Which should keep you busy for hours already!) but I'm constantly adding new content - There is a lot planned! 
+        O jogo contém 18 levels. (Oque deve manter você ocupado por horas!) Mas eu estou constantemente adicionando novo conteudo - Tem muita coisa planejada! 
 
 
         [b]Standalone Advantages[/b]
 
         [list]
-            [*] Waypoints
-            [*] Unlimited Savegames
-            [*] Dark Mode
-            [*] More settings
-            [*] Allow me to further develop shapez.io ❤️
-            [*] More features in the future!
+            [*] Marcadores
+            [*] Saves de jogo ilimitados
+            [*] Modo escuro
+            [*] Mais configurações
+            [*] Me ajuda a desenvolver o shapez.io ❤️
+            [*] Mais recursos no futuro!
         [/list]
 
         [b]Planned features & Community suggestions[/b]
 
-        This game is open source - Anybody can contribute! Besides of that, I listen [b]a lot[/b] to the community! I try to read all suggestions and take as much feedback into account as possible.
+        Esse jogo é open source - Todos podem contribuir! Fora aquilo, eu ouço [b]Bastante[/b] a comunidade! eu vou tentar ler todas as sugestões e levar o maximo de feedback em consideração.
 
         [list]
-            [*] Story mode where buildings cost shapes
-            [*] More levels & buildings (standalone exclusive)
-            [*] Different maps, and maybe map obstacles
-            [*] Configurable map creation (Edit number and size of patches, seed, and more)
-            [*] More types of shapes
-            [*] More performance improvements (Although the game already runs pretty good!)
-            [*] Color blind mode
-            [*] And much more!
+            [*] Modo historia onde construções custam formas
+            [*] Mais levels e Construções (Exclusivo do Standalone)
+            [*] Mapas Diferentes, e talvez obstaculos no mapa.
+            [*] Criação de mapa configuravel (Editar o tamanho,semente,e mais)
+            [*] Mais tipos de fromas
+            [*] Mais melhorias de performace (Mesmo o jogo rodem bem!)
+            [*] Modo de cores daltonico!
+            [*] E muito mais!
         [/list]
 
-        Be sure to check out my trello board for the full roadmap! https://trello.com/b/ISQncpJP/shapezio
+        Tenha certeza de checar minha trello board para o roadmap inteiro! https://trello.com/b/ISQncpJP/shapezio
 
 global:
     loading: Carregando
@@ -197,8 +197,8 @@ dialogs:
             Voce precisa reiniciar o jogo para aplicar as mudanças.
 
     editKeybinding:
-        title: Change Keybinding
-        desc: Press the key you want to assign, or escape to cancel.
+        title: Mudar os Controles
+        desc: Pressione a tecla que você quer colocar, ou escape para cancelar.
 
     resetKeybindingsConfirmation:
         title: Resetar controles
@@ -356,7 +356,7 @@ ingame:
         playtime: Tempo de Jogo
 
         buildingsPlaced: Construções
-        beltsPlaced: Belts
+        beltsPlaced: Esteira
 
         buttons:
             continue: Continue
@@ -410,75 +410,75 @@ shopUpgrades:
 buildings:
     belt:
         default:
-            name: &belt Conveyor Belt
+            name: &Esteira
             description: Transporta itens, mantenha pressionado e arraste para colocar vários.
 
     miner: # Internal name for the Extractor
         default:
-            name: &miner Extractor
+            name: &Extrator 
             description: Coloque sobre uma forma ou cor para extraí-la.
 
         chainable:
-            name: Extractor (Chain)
+            name: Extrator (Corrente)
             description: Coloque sobre uma forma ou cor para extraí-la. Pode ser acorrentado.
 
     underground_belt: # Internal name for the Tunnel
         default:
-            name: &underground_belt Tunnel
+            name: &Tunel
             description: Permite transportar recursos sob construções.
 
         tier2:
-            name: Tunnel Tier II
+            name: Tunel Tier II
             description: Permite transportar recursos sob construções.
 
     splitter: # Internal name for the Balancer
         default:
-            name: &splitter Balancer
-            description: Multifunctional - Distribui uniformemente todas as entradas em todas as saídas.
+            name: &Separador ou Junção
+            description: Multifuncional- Distribui uniformemente todas as entradas em todas as saídas.
 
         compact:
-            name: Merger (compact)
+            name: Junção (compacto)
             description: Mescla duas correias transportadoras em uma.
 
         compact-inverse:
-            name: Merger (compact)
+            name: Junção (compacto)
             description: Mescla duas correias transportadoras em uma.
 
     cutter:
         default:
-            name: &cutter Cutter
+            name: &Cortador
             description: Corta as formas de cima para baixo e produz as duas metades. <strong> Se você usar apenas uma parte, não se esqueça de destruir a outra parte, ou ela irá parar a produção! </strong>
         quad:
-            name: Cutter (Quad)
+            name: Cortador (Quad)
             description: Corta as formas em quatro partes. <strong> Se você usar apenas uma parte, não se esqueça de destruir as outras, ou ela irá parar a produção! </strong>
 
     rotater:
         default:
-            name: &rotater Rotate
+            name: &Rodador
             description: Gira as formas no sentido horário em 90 graus.
         ccw:
-            name: Rotate (CCW)
+            name: Rodador (CCW)
             description: RGira as formas no sentido anti-horário em 90 graus.
 
     stacker:
         default:
-            name: &stacker Stacker
+            name: &Empilhador 
             description: Empilha os dois itens. Se eles não puderem ser mesclados, o item certo será colocado acima do item esquerdo.
 
     mixer:
         default:
-            name: &mixer Color Mixer
+            name: &Misturador de cores
             description: Mistura duas cores usando mistura aditiva.
 
     painter:
         default:
-            name: &painter Painter
+            name: &Pintador
             description: Colore a forma inteira na entrada esquerda com a cor da entrada direita.
         double:
-            name: Painter (Double)
+            name: Pintador (Double)
             description: Colore as duas formas na entrada esquerda com a cor da entrada direita.
         quad:
-            name: Painter (Quad)
+            name: Pintador (Quad)
             description: Permite colorir cada quadrante da forma com uma cor diferente.
 
     trash:
